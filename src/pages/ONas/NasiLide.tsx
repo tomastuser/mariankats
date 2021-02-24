@@ -17,13 +17,13 @@ const NasiLide = () => {
   return (
     <Layout title='Naši lidé'>
       <div className='mainOstatni'>
-        <div className='mainOstatniNadpis'>
-          <div className='mainText'>
-            <Zaklad nazev='Naši lidé' />
+        <div className='nasTym'>
+          <div className='mainOstatniNadpis'>
+            <div className='mainText' style={{ paddingBottom: '5vh' }}>
+              <Zaklad nazev='Naši lidé' />
+            </div>
           </div>
-        </div>
-        {clenove && clenove.length > 0 ? (
-          <div className='nasTym'>
+          {clenove && clenove.length > 0 ? (
             <div className='tymContainer'>
               <div className='tym'>
                 {serazeniOdNejvyssiho()
@@ -33,10 +33,10 @@ const NasiLide = () => {
                   ))}
               </div>
             </div>
-          </div>
-        ) : (
-          <Loading />
-        )}
+          ) : (
+            <Loading />
+          )}
+        </div>
       </div>
     </Layout>
   );

@@ -16,30 +16,85 @@ import {
 function OdrazkyUvod() {
   return (
     <div className='odrazkyUvodContainer'>
-      <h1>Lesní školka Mariánka</h1>
+      <h1 className='odrazkyNadpis'>Lesní školka Mariánka</h1>
       <ul className='odrazkySloupecA'>
         <li>
+          <FontAwesomeIcon
+            className='ikonaM'
+            icon={faBug}
+            size='1x'
+            fixedWidth
+          />
           {'  '}dětství v přírodě{' '}
-          <FontAwesomeIcon icon={faBug} size='1x' fixedWidth />
+          <FontAwesomeIcon
+            className='ikonaD'
+            icon={faBug}
+            size='1x'
+            fixedWidth
+          />
         </li>
         <li>
+          <FontAwesomeIcon
+            className='ikonaM'
+            icon={faSeedling}
+            size='1x'
+            fixedWidth
+          />
           {'  '} učení prožitkem{' '}
-          <FontAwesomeIcon icon={faSeedling} size='1x' fixedWidth />
+          <FontAwesomeIcon
+            className='ikonaD'
+            icon={faSeedling}
+            size='1x'
+            fixedWidth
+          />
         </li>
         <li>
+          <FontAwesomeIcon
+            className='ikonaM'
+            icon={faFrog}
+            size='1x'
+            fixedWidth
+          />
           {'  '} bez zdí a plotů{' '}
-          <FontAwesomeIcon icon={faFrog} size='1x' fixedWidth />
+          <FontAwesomeIcon
+            className='ikonaD'
+            icon={faFrog}
+            size='1x'
+            fixedWidth
+          />
         </li>
         <li>
+          <FontAwesomeIcon
+            className='ikonaM'
+            icon={faCampground}
+            size='1x'
+            fixedWidth
+          />
           {'  '} kapacita 15 dětí{' '}
-          <FontAwesomeIcon icon={faCampground} size='1x' fixedWidth />
+          <FontAwesomeIcon
+            className='ikonaD'
+            icon={faCampground}
+            size='1x'
+            fixedWidth
+          />
         </li>
         <li>
+          <FontAwesomeIcon
+            className='ikonaM'
+            icon={faCloudSun}
+            size='1x'
+            fixedWidth
+          />
           {'  '} otevřeno 7:30 až 16:00{' '}
-          <FontAwesomeIcon icon={faCloudSun} size='1x' fixedWidth />
+          <FontAwesomeIcon
+            className='ikonaD'
+            icon={faCloudSun}
+            size='1x'
+            fixedWidth
+          />
         </li>
       </ul>
-      <div className='cara'></div>
+      <div className='caraOdrazky'></div>
       <ul className='odrazkySloupecB'>
         <li>
           <FontAwesomeIcon icon={faTree} size='1x' fixedWidth />

@@ -8,6 +8,7 @@
 :root {
   --text: #353535;
   --white: #ffffff;
+  --back: #fdfdec;
 }
 
 @font-face {
@@ -48,9 +49,7 @@ main a:hover {
 }
 
 .mainOstatni {
-  padding-top: 1vh;
-  padding-bottom: 10vh;
-  background-color: #fdfdec;
+  background-color: var(--back);
 }
 
 .mainOstatniNadpis {
@@ -61,9 +60,7 @@ main a:hover {
 .mainTextCont {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
-  padding-top: 1vh;
-  padding-bottom: 10vh;
-  background-color: #fdfdec;
+  background-color: var(--back);
   background-image: url(./public/aktualitypozadi.png);
   /* background-position: -8vw -4.5vh; */
   /* background-repeat: no-repeat; */
@@ -75,6 +72,8 @@ main a:hover {
   text-align: left;
   grid-column: 2/3;
   margin-top: 4vh;
+  padding-bottom: 20vh;
+  background-color: var(--back);
 }
 .mainText h1 {
   text-align: center;
@@ -132,7 +131,7 @@ button {
   border-style: none;
   font-size: 1em;
   line-height: 1.5;
-  color: #fdfdec;
+  color: var(--back);
   text-decoration: none;
 }
 
@@ -142,7 +141,7 @@ button {
   width: 100%;
   color: var(--text);
   cursor: pointer;
-  background-color: #fdfdec;
+  background-color: var(--back);
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -336,7 +335,7 @@ tr:nth-child(even) {
 .navSpacerAtTheTop {
   width: 100%;
   min-height: 10vh;
-  background-color: #fdfdec;
+  background-color: var(--back);
 }
 
 .sideNavSpacer {
@@ -383,7 +382,8 @@ tr:nth-child(even) {
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
-
+  padding-top: 10px;
+  padding-bottom: 7px;
   background-color: transparent;
 }
 .up {
@@ -422,7 +422,8 @@ tr:nth-child(even) {
   color: var(--text);
 }
 
-.footS {
+.Footer {
+  position: relative;
 }
 
 .FooterD {
@@ -489,12 +490,12 @@ tr:nth-child(even) {
 }
 
 .girlanda {
-  background-color: #fdfdec;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 3vh 0 0vh 0;
-  margin-bottom: -30vh;
+  position: absolute;
+  top: -15vh;
 }
 .girlanda img {
   z-index: 6;
@@ -516,12 +517,12 @@ tr:nth-child(even) {
   padding-top: 5vh;
 }
 .uvodAktuality {
-  background-color: #fdfdec;
+  background-color: var(--back);
 }
 
 .pozadiFixed {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   bottom: 48%;
   left: 50%;
   margin-bottom: -50vh;
@@ -531,12 +532,16 @@ tr:nth-child(even) {
   overflow: hidden;
 }
 
+.pozadiFixed img {
+  width: 100%;
+}
+
 .pozadiPrazdneContainer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   width: 100%;
   text-align: left;
-  padding-bottom: 4vh;
+  padding-bottom: 18vh;
   padding-top: 4vh;
 }
 .pozadiPrazdne {
@@ -547,13 +552,13 @@ tr:nth-child(even) {
   background-size: 25px;
 
   grid-column: 2/3;
-  color: #fdfdec;
+  color: var(--back);
   font-size: 1.3em;
 }
 
 .pozadiPrazdne h1 {
   margin-bottom: 2vh;
-  color: #fdfdec;
+  color: var(--back);
 }
 
 .odrazkyUvodContainer {
@@ -562,13 +567,32 @@ tr:nth-child(even) {
   grid-column-gap: 2vw;
   grid-template-rows: auto auto auto auto;
   padding: 5vh 10vh 2vh 10vh;
-
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 60px;
+  font-size: 1.1rem;
+  line-height: 300%;
+}
+
+.odrazkySloupecA {
+  text-align: right;
+  grid-column: 1/2;
+  list-style: none;
+}
+
+.odrazkySloupecB {
+  text-align: left;
+  list-style: none;
+}
+
+.ikonaD {
+  display: inline;
+}
+
+.ikonaM {
+  display: none;
 }
 
 .caraNadpisOdrazky {
-  grid-column: 1/4;
   grid-row: 2/3;
   width: 100%;
   text-align: center;
@@ -579,51 +603,24 @@ tr:nth-child(even) {
   list-style: none;
   margin-left: 0;
 }
-.odrazkyUvodContainer h1 {
+
+.odrazkyNadpis {
   grid-column: 1/4;
-  grid-row: 1/2;
   text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 .odrazkyUvodContainer h3 {
-  color: #fdfdec;
+  color: var(--back);
 }
 .odrazkyUvodContainer a {
-  color: #fdfdec;
-}
-.odrazkyGrid1 {
-  text-align: right;
-  grid-column: 1/2;
-  grid-row: 2/3;
+  color: var(--back);
 }
 
-.odrazkyGrid2 {
-  text-align: left;
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-.odrazkyGrid3 {
-  text-align: right;
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-.odrazkyGrid4 {
-  text-align: left;
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
 .caraOdrazky {
   border-left: 2px solid white;
   grid-column: 2/3;
-  grid-row: 2/4;
   height: 100%;
-}
-
-.odrazkyZaver {
-  grid-column: 1/4;
-  grid-row: 4/5;
-  text-align: center;
-  margin-top: 2vh;
 }
 
 .uvodSlider {
@@ -903,12 +900,12 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fdfdec;
+  background-color: var(--back);
   background-image: url(./public/aktualitypozadi.png);
-  /* background-position: -8vw -4.5vh; */
   /* background-repeat: no-repeat; */
   background-size: 800px;
   padding-top: 5vh;
+  padding-bottom: 20vh;
 }
 
 .aktualityPrehledUvod {
@@ -994,7 +991,7 @@ tr:nth-child(even) {
   border-image: url(./public/caraNav12S.png) 41.1 repeat;
   border-width: 20px;
   border-image-outset: 0px;
-  background-color: #fdfdec;
+  background-color: var(--back);
   padding: 4vh;
 }
 .aktualitaPozadi1::after {
@@ -1022,7 +1019,7 @@ tr:nth-child(even) {
   background-image: url(./public/L1.png);
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 28vh;
+  background-size: 220px;
   pointer-events: none;
 }
 .aktualitaPozadi1 {
@@ -1135,14 +1132,14 @@ tr:nth-child(even) {
   content: ' ';
   position: absolute;
   bottom: -100px;
-  left: -8vw;
+  left: -150px;
   width: 350px;
-  height: 130px;
+  height: 150px;
   z-index: 0;
   background-image: url(./public/L4R.png);
   background-position: 0;
   background-repeat: no-repeat;
-  background-size: 350px;
+  background-size: 320px;
   pointer-events: none;
 }
 .aktualitaPozadi4 .button {
@@ -1341,7 +1338,7 @@ tr:nth-child(even) {
 }
 .aktualita .button {
   flex-grow: 0;
-  background-color: #fdfdec;
+  background-color: var(--back);
   color: var(--text);
   width: 100%;
   font-weight: normal;
@@ -1394,7 +1391,7 @@ tr:nth-child(even) {
 .fotoContainer {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  background-color: #fdfdec;
+  background-color: var(--back);
 }
 
 .foto {
@@ -1426,9 +1423,17 @@ tr:nth-child(even) {
 
 /* CLENOVE TYMU */
 
+.nasTym {
+  background-color: var(--back);
+  background-image: url(./public/aktualitypozadi.png);
+  /* background-repeat: no-repeat; */
+  background-size: 800px;
+}
+
 .tym {
   padding-left: 5vw;
   padding-right: 5vw;
+  padding-bottom: 20vh;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 5vw 5vw;
@@ -1469,38 +1474,6 @@ tr:nth-child(even) {
   text-align: left;
 }
 
-.odrazkyUvodContainer {
-  display: grid;
-  grid-template-columns: 200fr 1fr 200fr;
-  grid-column-gap: 2vw;
-  font-size: 1.1rem;
-  line-height: 300%;
-  margin-bottom: 2vh;
-  margin-top: 4vh;
-}
-
-.odrazkyUvodContainer h1 {
-  grid-column: 1/4;
-
-  text-align: center;
-}
-.odrazkySloupecA {
-  text-align: right;
-  grid-column: 1/2;
-  list-style: none;
-}
-
-.cara {
-  border-left: 2px solid white;
-  grid-column: 2/3;
-  height: 100%;
-}
-.odrazkySloupecB {
-  text-align: left;
-  grid-column: 3/4;
-  list-style: none;
-}
-
 /* BIG TABLET NAV */
 
 @media screen and (max-width: 1280px) {
@@ -1534,7 +1507,7 @@ tr:nth-child(even) {
     padding-top: 20vh;
   }
   .girlanda {
-    margin-bottom: -25vh;
+    top: -12vh;
   }
   .aktuality {
     grid-template-columns: 1fr 1fr;
@@ -1616,9 +1589,6 @@ tr:nth-child(even) {
     top: -3vh;
     left: auto;
   }
-  .girlanda {
-    margin-bottom: -20vh;
-  }
   .Footer2 {
     grid-template-columns: 1fr 15fr 1fr;
   }
@@ -1635,6 +1605,9 @@ tr:nth-child(even) {
   }
   .mainTextCont {
     padding-bottom: 0;
+  }
+  .mainText {
+    padding-bottom: 10vh;
   }
   .nav {
     min-height: 10vh;
@@ -1658,6 +1631,7 @@ tr:nth-child(even) {
   .logoCont {
     height: 6vh;
     margin-right: 1rem;
+    margin-left: 0;
   }
   .logo {
     width: 50%;
@@ -1778,7 +1752,6 @@ tr:nth-child(even) {
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: auto;
     justify-content: center;
-    font-size: 1.1em;
   }
 
   .caraOdrazky {
@@ -1852,7 +1825,7 @@ tr:nth-child(even) {
     z-index: 5;
   }
   .girlanda {
-    margin-bottom: -10vh;
+    top: -5vh;
   }
   .footerInfo {
     padding: 4vw 2.3vw 4vw 2.3vw;
@@ -1956,8 +1929,7 @@ tr:nth-child(even) {
     width: 100%;
   }
   .girlanda {
-    padding-top: 5vh;
-    margin-bottom: -5vh;
+    top: -8vh;
   }
   .FooterM {
     padding-top: 5vh;
