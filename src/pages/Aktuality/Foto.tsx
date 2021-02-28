@@ -17,15 +17,13 @@ const Foto = ({ match, history }: RouteComponentProps<{ id: string }>) => {
           <div className='fotoContainer'>
             <div className='foto'>
               {aktualita.Image ? (
-                <div className='fotoImgCont'>
-                  <img
-                    src={aktualita.Image.url}
-                    alt={aktualita.Nazev}
-                    onClick={history.goBack}
-                    onKeyDown={history.goBack}
-                    role='presentation'
-                  />
-                </div>
+                <img
+                  src={aktualita.Image.url}
+                  alt={aktualita.Nazev}
+                  onClick={history.goBack}
+                  onKeyDown={history.goBack}
+                  role='presentation'
+                />
               ) : (
                 <h1>Foto neexistuje</h1>
               )}

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Layout from '../../components/Layout';
 import Loading from '../../components/Loading';
 import ClenTymu from '../../components/Tym/ClenTymu';
-import Zaklad from '../../components/Zaklad';
+import caraNadpis from '../../public/cara_nadpis.png';
 import { dbContext } from '../../utils/dbContext';
 import { ClenIF } from '../../utils/dbInterfaces';
 
@@ -11,7 +11,7 @@ const NasiLide = () => {
 
   const serazeniOdNejvyssiho = () => {
     return [].slice.call(clenove).sort((a: ClenIF, b: ClenIF) => {
-      return Number(b.id) - Number(a.id);
+      return b.Poradi - a.Poradi;
     });
   };
   return (
@@ -20,7 +20,8 @@ const NasiLide = () => {
         <div className='nasTym'>
           <div className='mainOstatniNadpis'>
             <div className='mainText' style={{ paddingBottom: '5vh' }}>
-              <Zaklad nazev='Naši lidé' />
+              <h1 className='nazev'>Naši lidé</h1>
+              <img className='caraNadpis' alt='caraNadpis' src={caraNadpis} />
             </div>
           </div>
           {clenove && clenove.length > 0 ? (

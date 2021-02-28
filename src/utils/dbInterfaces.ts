@@ -9,6 +9,7 @@ interface ClenIF {
   Pozice: string;
   Image: { url: string };
   Popis: string;
+  Poradi: number;
   id: string;
 }
 interface StrankaIF {

@@ -66,8 +66,8 @@ function Nav() {
           path: '/info/nasepravidla',
         },
         {
-          name: 'Interni sekce',
-          path: '/info/interni',
+          name: 'Jak se žije v lesní školce',
+          path: '/info/jaksezije',
         },
       ],
     },

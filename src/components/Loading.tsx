@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import kruh from '../public/kruhF.png';
+import kruh from '../public/kruhO.png';
 
 const Loading = () => {
   const [msgVisible, setMsgVisible] = useState(false);

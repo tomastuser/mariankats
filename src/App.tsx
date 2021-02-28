@@ -6,9 +6,6 @@ import './slick-theme.css';
 import './slick.css';
 
 import Uvod from './pages/Uvod';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
-import Footer2 from './components/Footer2';
 
 import OMariance from './pages/ONas/OMariance';
 import Zazemi from './pages/ONas/Zazemi';
@@ -22,7 +19,7 @@ import Zapis from './pages/Info/Zapis';
 import Cenik from './pages/Info/Cenik';
 import CoSSebou from './pages/Info/CoSSebou';
 import NasePravidla from './pages/Info/NasePravidla';
-import Interni from './pages/Info/Interni';
+import JakSeZije from './pages/Info/JakSeZije';
 
 import Aktualita from './pages/Aktuality/Aktualita';
 import AktualityVse from './pages/Aktuality/AktualityVse';
@@ -82,7 +79,7 @@ const App = () => {
             <Route exact path='/info/cenik' component={Cenik} />
             <Route exact path='/info/cossebou' component={CoSSebou} />
             <Route exact path='/info/nasepravidla' component={NasePravidla} />
-            <Route exact path='/info/interni' component={Interni} />
+            <Route exact path='/info/jaksezije' component={JakSeZije} />
 
             <Route path='/aktuality' exact component={AktualityVse} />
             <Route exact path='/aktualita/:id' component={Aktualita} />
