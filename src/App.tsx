@@ -20,6 +20,7 @@ import Cenik from './pages/Info/Cenik';
 import CoSSebou from './pages/Info/CoSSebou';
 import NasePravidla from './pages/Info/NasePravidla';
 import JakSeZije from './pages/Info/JakSeZije';
+import TipyProRodice from './pages/Info/TipyProRodice';
 
 import Aktualita from './pages/Aktuality/Aktualita';
 import AktualityVse from './pages/Aktuality/AktualityVse';
@@ -80,6 +81,7 @@ const App = () => {
             <Route exact path='/info/cossebou' component={CoSSebou} />
             <Route exact path='/info/nasepravidla' component={NasePravidla} />
             <Route exact path='/info/jaksezije' component={JakSeZije} />
+            <Route exact path='/info/tipyprorodice' component={TipyProRodice} />
 
             <Route path='/aktuality' exact component={AktualityVse} />
             <Route exact path='/aktualita/:id' component={Aktualita} />

@@ -166,14 +166,14 @@ table {
 }
 
 th {
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
 }
 
 td {
   padding: 0.3vw;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
   min-width: 100px;
 }
 
