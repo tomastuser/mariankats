@@ -667,11 +667,15 @@ tr:nth-child(even) {
   text-align: center;
   display: flex;
   justify-content: center;
-  z-index: 2;
+}
+.uvodSliderCont {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 }
 
-.uvodSlider:focus {
-  opacity: 100%;
+.uvodStredCont {
+  /* line-height: 50px; */
 }
 
 .uvodSlider img {
@@ -708,6 +712,9 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
   pointer-events: all;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .sipka:hover {
@@ -734,6 +741,27 @@ tr:nth-child(even) {
   text-transform: uppercase;
   z-index: 0;
 }
+
+.vitejtePruh h2 {
+  margin-bottom: 0;
+}
+.vitejtePruh {
+  display: none;
+  color: black;
+  font-family: Marianka, 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  background-color: #ff9e44;
+  padding: 5vw;
+  letter-spacing: 1px;
+  border-top: solid;
+  border-bottom: solid;
+  border-image: url('./public/caraNav12R.png') 38 repeat;
+  border-width: 21px;
+  border-image-outset: 3px;
+  z-index: 5;
+  position: relative;
+}
+
 .vitejte {
   position: relative;
   color: rgb(253, 253, 236);
@@ -1579,6 +1607,23 @@ tr:nth-child(even) {
     grid-template-columns: 1fr 8fr 1fr;
   }
 
+  .uvodSliderCont {
+    width: 100vw;
+    margin-bottom: 0;
+  }
+
+  .uvodSlider img {
+    height: auto;
+    object-fit: unset;
+  }
+
+  .vitejtePruh {
+    display: block;
+  }
+  .sipka {
+    display: none;
+  }
+
   .aktualita {
     width: 50%;
   }
@@ -1915,6 +1960,14 @@ tr:nth-child(even) {
 
   .aktualita {
     width: 90%;
+  }
+
+  .vitejtePruh h2 {
+    font-size: 1.2rem;
+  }
+
+  .vitejtePruh {
+    border-width: 16px;
   }
 
   .sponzoriCont {
