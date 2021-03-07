@@ -1062,7 +1062,7 @@ tr:nth-child(even) {
   border: solid;
   border-image: url(./public/caraNav12S.png) 41.1 repeat;
   border-width: 20px;
-  border-image-outset: 0px;
+  /* border-image-outset: 0px; */
   background-color: var(--back);
   padding: 4vh;
 }
@@ -1151,6 +1151,7 @@ tr:nth-child(even) {
   top: -20px;
   left: -20px;
   pointer-events: none;
+  overflow: hidden;
 }
 .aktualitaPozadi3::before {
   content: ' ';
@@ -1172,6 +1173,7 @@ tr:nth-child(even) {
   position: relative;
   background-color: transparent;
   z-index: 2;
+  overflow: hidden;
   /* background-color: #fdbb5a; */
 }
 .aktualitaPozadi4 {
@@ -1352,7 +1354,7 @@ tr:nth-child(even) {
   border-image-outset: -20px;
   text-align: left;
   padding: 4vh;
-  /* overflow: auto; */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   position: relative;
