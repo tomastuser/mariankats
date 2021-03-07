@@ -31,7 +31,7 @@ const Sponzori = () => {
                       alt=''
                       src={sponzor.Image.url}
                     ></img>
-                    {sponzor.Nazev === 'Brno-Líšeň' && <h4>Brno-Líšeň</h4>}
+                    {sponzor.Popis && <h4>{sponzor.Popis}</h4>}
                   </a>
                 </div>
               ))

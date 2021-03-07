@@ -9,7 +9,7 @@ interface Props {
 
 const AktualitaZastupce = ({ aktualita, pozadi }: Props) => (
   <div className={`aktualitaZastupce ${pozadi}`}>
-    <Link to={`/aktuality/${aktualita.id}`}>
+    <Link to={`/aktualita/${aktualita.id}`}>
       <h4 className='aktualitaZastupceNadpis'>{aktualita.Nazev}</h4>
     </Link>
     <div className='aktualitaZastupceText'>

@@ -2,6 +2,7 @@ import React from 'react';
 import ContentImport from '../../components/ContentImport';
 import FotoCont from '../../components/FotoCont';
 import Layout from '../../components/Layout';
+import Andel from '../../components/Uvod/Andel';
 import Zaklad from '../../components/Zaklad';
 
 const JakSeZije = () => {
@@ -11,7 +12,7 @@ const JakSeZije = () => {
         <div className='mainText'>
           <Zaklad nazev='Jak se žije v lesní školce' />
           <ContentImport nazev='Jak se žije' />
-          <FotoCont name='cenik.jpg' alt='JakSeZije' />
+          <Andel />
         </div>
       </div>
     </Layout>

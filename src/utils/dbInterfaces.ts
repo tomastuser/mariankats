@@ -24,6 +24,7 @@ interface SponzorIF {
   Poradi: number;
   Okraj: number;
   id: string;
+  Popis: string;
 }
 
 export { AktualitaIF, ClenIF, StrankaIF, SponzorIF };
