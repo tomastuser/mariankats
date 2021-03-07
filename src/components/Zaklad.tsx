@@ -18,25 +18,31 @@ const Zaklad = ({ nazev }: { nazev: string }) => {
     <div>
       <h1 className='nazev'>{nazev}</h1>
       <div className='nazevCont'>
-        <div className='LCont'>
-          {random.current === 0 && <img className='L1' alt='L1' src={L1_1} />}
-          {random.current === 1 && <img className='L1_2' alt='L1' src={L1_2} />}
-          {random.current === 2 && <img className='L1' alt='L1' src={L1_3} />}
-          <img className='L2' alt='L2' src={L2} />
-        </div>
+        {nazev !== 'Jak se žije v lesní školce' && (
+          <div className='LCont'>
+            {random.current === 0 && <img className='L1' alt='L1' src={L1_1} />}
+            {random.current === 1 && (
+              <img className='L1_2' alt='L1' src={L1_2} />
+            )}
+            {random.current === 2 && <img className='L1' alt='L1' src={L1_3} />}
+            <img className='L2' alt='L2' src={L2} />
+          </div>
+        )}
         <img className='caraNadpis' alt='caraNadpis' src={caraNadpis} />
-        <div className='RCont'>
-          {random.current === 0 && (
-            <img className='R1' alt='skritek1' src={R1_1} />
-          )}
-          {random.current === 1 && (
-            <img className='R1_2' alt='skritek1' src={R1_2} />
-          )}
-          {random.current === 2 && (
-            <img className='R1' alt='skritek1' src={R1_3} />
-          )}
-          <img className='R2' alt='R2' src={R2} />
-        </div>
+        {nazev !== 'Jak se žije v lesní školce' && (
+          <div className='RCont'>
+            {random.current === 0 && (
+              <img className='R1' alt='skritek1' src={R1_1} />
+            )}
+            {random.current === 1 && (
+              <img className='R1_2' alt='skritek1' src={R1_2} />
+            )}
+            {random.current === 2 && (
+              <img className='R1' alt='skritek1' src={R1_3} />
+            )}
+            <img className='R2' alt='R2' src={R2} />
+          </div>
+        )}
       </div>
     </div>
   );
