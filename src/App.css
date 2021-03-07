@@ -29,7 +29,6 @@ body {
 
 body a {
   text-decoration: none;
-  word-break: break-all;
 }
 
 a:focus,
@@ -1322,6 +1321,7 @@ tr:nth-child(even) {
 .aktualitaZastupceText a {
   color: var(--link);
   font-weight: bold;
+  word-break: break-all;
 }
 
 .aktualitaZastupceText a:hover {
@@ -1634,6 +1634,14 @@ tr:nth-child(even) {
 
   .aktualita {
     width: 50%;
+  }
+
+  .LCont {
+    display: none;
+  }
+
+  .RCont {
+    display: none;
   }
 
   .pozadiPrazdneContainer {
