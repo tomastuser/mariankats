@@ -1093,6 +1093,7 @@ tr:nth-child(even) {
   background-repeat: no-repeat;
   background-size: 220px;
   pointer-events: none;
+  overflow: hidden;
 }
 .aktualitaPozadi1 {
   /* background-image: url(./public/slez51.png); */
@@ -1114,6 +1115,7 @@ tr:nth-child(even) {
   background-repeat: no-repeat;
   background-size: 280px;
   pointer-events: none;
+  overflow: hidden;
 }
 .aktualitaPozadi2::after {
   content: ' ';
@@ -1163,6 +1165,7 @@ tr:nth-child(even) {
   background-repeat: no-repeat;
   background-size: 180px;
   pointer-events: none;
+  overflow: hidden;
 }
 .aktualitaPozadi3 {
   /* background-image: url(./public/siska45.png); */
@@ -1204,6 +1207,7 @@ tr:nth-child(even) {
   background-repeat: no-repeat;
   background-size: 320px;
   pointer-events: none;
+  overflow: hidden;
 }
 .aktualitaPozadi5::after {
   content: ' ';
@@ -1252,6 +1256,7 @@ tr:nth-child(even) {
   background-repeat: no-repeat;
   background-size: 200px;
   pointer-events: none;
+  overflow: hidden;
 }
 .aktualitaPozadi6 {
   /* background-image: url(./public/jetel58.png); */
