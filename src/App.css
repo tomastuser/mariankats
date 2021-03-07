@@ -667,6 +667,7 @@ tr:nth-child(even) {
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 90vh;
 }
 .uvodSliderCont {
