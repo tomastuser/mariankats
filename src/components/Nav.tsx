@@ -69,6 +69,10 @@ function Nav() {
           name: 'Jak se žije v lesní školce',
           path: '/info/jaksezije',
         },
+        {
+          name: 'Tipy pro rodiče',
+          path: '/info/tipyprorodice',
+        },
       ],
     },
     {
