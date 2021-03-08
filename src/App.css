@@ -916,9 +916,16 @@ tr:nth-child(even) {
   padding-bottom: 4vh;
 }
 
+.kontaktContM ul {
+  list-style: none;
+}
 .kontaktContM {
   display: none;
-  list-style: none;
+}
+
+.zakladKontakt {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .kontaktContD {
@@ -926,6 +933,11 @@ tr:nth-child(even) {
   grid-template-columns: 1fr 1fr;
   grid-gap: 8vh;
   text-align: left;
+}
+
+.zakladKontakt {
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .kontaktContD ul {
@@ -940,6 +952,8 @@ tr:nth-child(even) {
 .kontaktB {
   grid-column: 2/3;
   text-align: left;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .kontaktB ul {
@@ -973,6 +987,7 @@ tr:nth-child(even) {
   background-size: 800px;
   padding-top: 5vh;
   padding-bottom: 20vh;
+  overflow-x: hidden;
 }
 
 .aktualityPrehledUvod h1 {
