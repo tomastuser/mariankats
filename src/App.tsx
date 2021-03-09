@@ -6,6 +6,7 @@ import './slick-theme.css';
 import './slick.css';
 
 import Uvod from './pages/Uvod';
+import Admin from './pages/Admin';
 
 import OMariance from './pages/ONas/OMariance';
 import Zazemi from './pages/ONas/Zazemi';
@@ -50,10 +51,10 @@ const App = () => {
     'https://marianka.herokuapp.com/aktuality/'
   );
   let clenove: ClenIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/lide'
+    'http://18.192.100.111:1337/lide'
   );
   let stranky: StrankaIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/stranky'
+    'http://18.192.100.111:1337/stranky'
   );
   let sponzori: SponzorIF[] | undefined = useFetch(
     'https://marianka.herokuapp.com/sponzori'
@@ -99,6 +100,7 @@ const App = () => {
             <Route exact path='/kontakt' component={Kontakt} />
 
             <Route exact path='/aktualita/:id/foto' component={Foto} />
+            <Route exact path='/admin' component={Admin} />
             <Route path='*' exact component={PageNotFound} />
           </Switch>
         </dbContext.Provider>
