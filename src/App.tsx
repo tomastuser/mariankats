@@ -51,10 +51,10 @@ const App = () => {
     'https://marianka.herokuapp.com/aktuality/'
   );
   let clenove: ClenIF[] | undefined = useFetch(
-    'http://18.192.100.111:1337/lide'
+    'https://marianka.herokuapp.com/lide'
   );
   let stranky: StrankaIF[] | undefined = useFetch(
-    'http://18.192.100.111:1337/stranky'
+    'https://marianka.herokuapp.com/stranky'
   );
   let sponzori: SponzorIF[] | undefined = useFetch(
     'https://marianka.herokuapp.com/sponzori'
