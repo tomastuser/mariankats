@@ -1,5 +1,5 @@
 import React from 'react';
-import Zaklad from '../components/Zaklad';
+import caraNadpis from '../public/cara_nadpis.png';
 import Layout from '../components/Layout';
 import ContentImportSmall from '../components/ContentImportSmall';
 
@@ -9,7 +9,8 @@ function Kontakt() {
       <div className='mainTextCont'>
         <div className='mainText'>
           <div className='zakladKontakt'>
-            <Zaklad nazev='Kontakt' />
+            <h1 className='nazev'>Kontakt</h1>
+            <img className='caraNadpis' alt='caraNadpis' src={caraNadpis} />
           </div>
           <div className='kontaktContD'>
             <div className='kontaktA'>

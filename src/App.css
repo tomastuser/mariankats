@@ -957,8 +957,8 @@ tr:nth-child(even) {
 .kontaktB {
   grid-column: 2/3;
   text-align: left;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .kontaktB ul {
@@ -2043,5 +2043,9 @@ tr:nth-child(even) {
   }
   .profilFotoTecky {
     width: 10vw !important;
+  }
+  .kontaktB {
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
