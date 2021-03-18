@@ -4,7 +4,7 @@ const FotoCont = ({ name, alt }: { name: string; alt: string }) => {
   return (
     <div className='fotoCont'>
       <div className='fotoContImg'>
-        <img alt={alt} src={`http://new.lesnimarianka.cz/images/${name}`} />
+        <img alt={alt} src={`https://lesnimarianka.cz/images/${name}`} />
       </div>
     </div>
   );

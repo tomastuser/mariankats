@@ -1,7 +1,7 @@
 RewriteEngine on
-    # Redirect to https
+   # Redirect to https
     RewriteCond %{SERVER_PORT} 80
-    RewriteRule ^(.*)$ https://www.mariankats.netlify.com/$1 [R,L]
+    RewriteRule ^(.*)$ https://www.lesnimarianka.cz/$1 [R,L]
     # Don't rewrite files or directories
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
