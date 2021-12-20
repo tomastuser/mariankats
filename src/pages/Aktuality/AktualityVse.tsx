@@ -15,18 +15,28 @@ const Aktuality = ({ match }: RouteComponentProps<{ id: string }>) => {
   );
   const postsPerPage: number = 6;
 
-  const serazeniOdNejvyssiho = () => {
+  const serazeniOdNejvyssiho = (): AktualitaIF[] => {
     return [].slice.call(aktuality).sort((a: AktualitaIF, b: AktualitaIF) => {
       return Number(b.id) - Number(a.id);
     });
   };
 
+  let aktualitySorted: AktualitaIF[] = serazeniOdNejvyssiho();
+  const pinned = aktualitySorted.find(
+    (akt: AktualitaIF) => Number(akt.id) === 25
+  );
+  if (aktualitySorted && pinned) {
+    const aktualityRemovePinned = aktualitySorted.filter(
+      (akt) => Number(akt.id) !== 25
+    );
+    aktualityRemovePinned.unshift(pinned);
+    aktualitySorted = aktualityRemovePinned;
+  }
+
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const aktualityZde = serazeniOdNejvyssiho().slice(
-    indexOfFirstPost,
-    indexOfLastPost
-  );
+
+  const aktualityZde = aktualitySorted.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 

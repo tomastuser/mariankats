@@ -16,6 +16,19 @@ function Uvod() {
       return Number(b.id) - Number(a.id);
     });
   };
+
+  let aktualitySorted: AktualitaIF[] = serazeniOdNejvyssiho();
+  const pinned = aktualitySorted.find(
+    (akt: AktualitaIF) => Number(akt.id) === 25
+  );
+  if (aktualitySorted && pinned) {
+    const aktualityRemovePinned = aktualitySorted.filter(
+      (akt) => Number(akt.id) !== 25
+    );
+    aktualityRemovePinned.unshift(pinned);
+    aktualitySorted = aktualityRemovePinned;
+  }
+
   return (
     <Layout title='Úvodní strana'>
       <div className='pozadiFixed'>
@@ -32,7 +45,7 @@ function Uvod() {
             {aktuality && aktuality.length > 0 ? (
               <div>
                 <div className='aktuality'>
-                  {serazeniOdNejvyssiho()
+                  {aktualitySorted
                     .slice(0, 3)
                     .map((aktualita: AktualitaIF, index: number) => (
                       <AktualitaZastupce
