@@ -11,7 +11,7 @@ const Uvod = () => {
     return () => clearInterval(timer);
   });
   return (
-    <div className='uvodStredCont'>
+    <div>
       <div className='uvodSliderCont'>
         <div className='uvodSlider'>
           <img alt='   ' src='https://lesnikavyl.cz/images/mari_uvod.jpg' />

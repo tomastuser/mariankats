@@ -36,10 +36,12 @@ const Aktualita = ({ match, history }: RouteComponentProps<{ id: string }>) => {
                     )}
                   </div>
                 </div>
-                <div
-                  dangerouslySetInnerHTML={{ __html: aktualita.Text }}
-                  className='aktualitaText'
-                />
+                {aktualita.Text && (
+                  <div
+                    dangerouslySetInnerHTML={{ __html: aktualita.Text }}
+                    className='aktualitaText'
+                  />
+                )}
               </div>
               <button
                 className='aktualitaButton button'

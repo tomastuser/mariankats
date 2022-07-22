@@ -42,6 +42,10 @@ function Nav() {
           name: 'Dokumenty',
           path: '/onas/dokumenty',
         },
+        {
+          name: 'Nabídka práce',
+          path: '/onas/nabidkaprace',
+        },
       ],
     },
     {

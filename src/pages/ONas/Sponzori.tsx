@@ -39,6 +39,29 @@ const Sponzori = () => {
               <Loading />
             )}
           </div>
+          <p>
+            Děkujeme všem partnerům a sponzorům za jejich příspěvky a
+            vstřícnost. Hluboké poděkování patří také všem rodičům, přátelům a
+            příznivcům za jejich obětavou spolupráci při našich aktivitách.
+          </p>
+          <div
+            style={{
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'center',
+            }}
+          >
+            <iframe
+              src='https://givt.cz/services/widget/widget.php?id=3728'
+              style={{
+                width: '480px',
+                maxWidth: '100%',
+                height: '370px',
+                border: 'none',
+                overflow: 'hidden',
+              }}
+            ></iframe>
+          </div>
         </div>
       </div>
     </Layout>

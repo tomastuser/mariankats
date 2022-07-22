@@ -15,6 +15,7 @@ import Program from './pages/ONas/Program';
 import Projekty from './pages/ONas/Projekty';
 import Sponzori from './pages/ONas/Sponzori';
 import Dokumenty from './pages/ONas/Dokumenty';
+import NabidkaPrace from './pages/ONas/NabidkaPrace';
 
 import Zapis from './pages/Info/Zapis';
 import Cenik from './pages/Info/Cenik';
@@ -75,6 +76,7 @@ const App = () => {
             <Route path='/onas/projekty' exact component={Projekty} />
             <Route path='/onas/sponzori' exact component={Sponzori} />
             <Route path='/onas/dokumenty' exact component={Dokumenty} />
+            <Route path='/onas/nabidkaprace' exact component={NabidkaPrace} />
 
             <Route exact path='/info' component={Zapis} />
             <Route exact path='/info/zapis' component={Zapis} />

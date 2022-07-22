@@ -519,6 +519,7 @@ tr:nth-child(even) {
   align-items: flex-start;
   position: absolute;
   top: -15vh;
+  width: 100%;
 }
 .girlanda img {
   z-index: 6;
@@ -680,10 +681,6 @@ tr:nth-child(even) {
   position: relative;
   overflow: hidden;
   text-align: center;
-}
-
-.uvodStredCont {
-  /* line-height: 50px; */
 }
 
 .uvodSlider img {

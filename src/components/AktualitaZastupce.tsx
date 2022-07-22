@@ -13,14 +13,16 @@ const AktualitaZastupce = ({ aktualita, pozadi }: Props) => (
       <h4 className='aktualitaZastupceNadpis'>{aktualita.Nazev}</h4>
     </Link>
     <div className='aktualitaZastupceText'>
-      <div
-        className='aktualitaZastupceTeloTextu'
-        dangerouslySetInnerHTML={{
-          __html:
-            aktualita.Text.substr(0, 280) +
-            (aktualita.Text.length > 300 ? ' ...' : ''),
-        }}
-      />
+      {aktualita.Text && (
+        <div
+          className='aktualitaZastupceTeloTextu'
+          dangerouslySetInnerHTML={{
+            __html:
+              aktualita.Text.substr(0, 280) +
+              (aktualita.Text.length > 300 ? ' ...' : ''),
+          }}
+        />
+      )}
     </div>
     <Link className='button' to={`/aktualita/${aktualita.id}`}>
       Celý příspěvek
