@@ -1,16 +1,16 @@
 interface AktualitaIF {
   Nazev: string;
-  id: string;
-  Image: { url: string };
+  id: number;
+  Image: { url: string } | null;
   Text: string;
 }
 interface ClenIF {
   Jmeno: string;
   Pozice: string;
-  Image: { url: string };
+  Image: { url: string } | null;
   Popis: string;
   // Poradi: number;
-  id: string;
+  id: number;
 }
 interface StrankaIF {
   Nazev: string;
@@ -18,13 +18,13 @@ interface StrankaIF {
 }
 interface SponzorIF {
   Nazev: string;
-  Vyska: string;
-  Image: { url: string };
+  Vyska: string | null;
+  Image: { url: string } | null;
   Odkaz: string;
   Poradi: number;
-  Okraj: number;
-  id: string;
-  Popis: string;
+  Okraj: number | null;
+  id: number;
+  Popis: string | null;
 }
 
 export { AktualitaIF, ClenIF, StrankaIF, SponzorIF };

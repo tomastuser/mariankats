@@ -36,30 +36,31 @@ import Kontakt from './pages/Kontakt';
 
 import Foto from './pages/Aktuality/Foto';
 import ScrollToTop from './utils/ScrollToTop';
-import useFetch from './utils/useFetch';
+// import useFetch from './utils/useFetch';
 import PageNotFound from './pages/404';
 
 import { dbContext } from './utils/dbContext';
-import {
-  AktualitaIF,
-  ClenIF,
-  StrankaIF,
-  SponzorIF,
-} from './utils/dbInterfaces';
+import { aktuality, clenove, sponzori, stranky } from './mockedData';
+// import {
+//   AktualitaIF,
+//   ClenIF,
+//   StrankaIF,
+//   SponzorIF,
+// } from './utils/dbInterfaces';
 
 const App = () => {
-  let aktuality: AktualitaIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/aktuality/'
-  );
-  let clenove: ClenIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/lide'
-  );
-  let stranky: StrankaIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/stranky'
-  );
-  let sponzori: SponzorIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/sponzori'
-  );
+  // let aktuality: AktualitaIF[] | undefined = useFetch(
+  //   'https://marianka.herokuapp.com/aktuality/'
+  // );
+  // let clenove: ClenIF[] | undefined = useFetch(
+  //   'https://marianka.herokuapp.com/lide'
+  // );
+  // let stranky: StrankaIF[] | undefined = useFetch(
+  //   'https://marianka.herokuapp.com/stranky'
+  // );
+  // let sponzori: SponzorIF[] | undefined = useFetch(
+  //   'https://marianka.herokuapp.com/sponzori'
+  // );
 
   return (
     <Router>
