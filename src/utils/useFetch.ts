@@ -9,7 +9,9 @@ const useFetch = (url: string) => {
       .then((res) => res.json())
       .then((data) => {
         if (isMounted) {
-          setFetchData(data);
+          setFetchData(
+            data.data.map((item: any) => ({ ...item.attributes, id: item.id }))
+          );
         }
       })
       .catch((err) => console.log(err));

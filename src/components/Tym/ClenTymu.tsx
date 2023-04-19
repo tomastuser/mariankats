@@ -11,23 +11,23 @@ import tec32 from '../../public/tec3-2.png';
 const ClenTymu = ({ clen }: { clen: ClenIF }) => (
   <div className='clenTymu'>
     <div className='profilFoto'>
-      {clen.Image &&
-        (Number(clen.id) % 3 === 0 ? (
-          <img alt='profilTecky' className='profilFotoTecky' src={tec31} />
-        ) : Number(clen.id) % 2 === 0 ? (
-          <img alt='profilTecky' className='profilFotoTecky' src={tec21} />
-        ) : (
-          <img alt='profilTecky' className='profilFotoTecky' src={tec11} />
-        ))}
-      {clen.Image && <img src={clen.Image.url} alt={clen.Jmeno} />}
-      {clen.Image &&
-        (Number(clen.id) % 3 === 0 ? (
-          <img alt='profilTecky' className='profilFotoTecky' src={tec32} />
-        ) : Number(clen.id) % 2 === 0 ? (
-          <img alt='profilTecky' className='profilFotoTecky' src={tec22} />
-        ) : (
-          <img alt='profilTecky' className='profilFotoTecky' src={tec12} />
-        ))}
+      {Number(clen.id) % 3 === 0 ? (
+        <img alt='profilTecky' className='profilFotoTecky' src={tec31} />
+      ) : Number(clen.id) % 2 === 0 ? (
+        <img alt='profilTecky' className='profilFotoTecky' src={tec21} />
+      ) : (
+        <img alt='profilTecky' className='profilFotoTecky' src={tec11} />
+      )}
+      {(clen.Image || clen.ImageUrl) && (
+        <img src={clen.Image?.url || clen.ImageUrl} alt={clen.Jmeno} />
+      )}
+      {Number(clen.id) % 3 === 0 ? (
+        <img alt='profilTecky' className='profilFotoTecky' src={tec32} />
+      ) : Number(clen.id) % 2 === 0 ? (
+        <img alt='profilTecky' className='profilFotoTecky' src={tec22} />
+      ) : (
+        <img alt='profilTecky' className='profilFotoTecky' src={tec12} />
+      )}
     </div>
     <h1>{clen.Jmeno}</h1>
     <h3>{`(${clen.Pozice})`}</h3>

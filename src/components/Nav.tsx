@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import caraNavR from '../public/caraNavR.png';
 import mariLogo from '../public/mariLogo.png';
 import logoNapis from '../public/logo.png';
+// import { aktuality, clenove, sponzori, stranky } from '../mockedData';
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
@@ -43,8 +44,8 @@ function Nav() {
           path: '/onas/dokumenty',
         },
         {
-          name: 'Nabídka práce',
-          path: '/onas/nabidkaprace',
+          name: 'Nabídka spolupráce',
+          path: '/onas/nabidkaspoluprace',
         },
       ],
     },
@@ -137,7 +138,82 @@ function Nav() {
     }
     setSubNavLinksOpen(subs);
   };
-
+  // const up = async () => {
+  //   for (let i = 0; i < aktuality.length; i++) {
+  //     const response = await fetch(
+  //       'http://new.lesnimarianka.cz/api/aktuality',
+  //       {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //         },
+  //         body: JSON.stringify({
+  //           data: {
+  //             Nazev: aktuality[i].Nazev,
+  //             Text: aktuality[i].Text,
+  //             ImageUrl: aktuality[i].Image?.url,
+  //           },
+  //         }),
+  //       }
+  //     );
+  //     console.log(response);
+  //   }
+  //   for (let i = 0; i < clenove.length; i++) {
+  //     const response = await fetch(
+  //       'http://new.lesnimarianka.cz/api/tym-clenove',
+  //       {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //         },
+  //         body: JSON.stringify({
+  //           data: {
+  //             Jmeno: clenove[i].Jmeno,
+  //             Popis: clenove[i].Popis,
+  //             Pozice: clenove[i].Pozice,
+  //             ImageUrl: clenove[i].Image?.url,
+  //           },
+  //         }),
+  //       }
+  //     );
+  //     console.log(response);
+  //   }
+  //   for (let i = 0; i < sponzori.length; i++) {
+  //     const response = await fetch('http://new.lesnimarianka.cz/api/sponzori', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         data: {
+  //           Nazev: sponzori[i].Nazev,
+  //           Popis: sponzori[i].Popis,
+  //           Poradi: sponzori[i].Poradi,
+  //           Vyska: sponzori[i].Vyska,
+  //           Okraj: sponzori[i].Okraj,
+  //           Odkaz: sponzori[i].Odkaz,
+  //           ImageUrl: sponzori[i].Image?.url,
+  //         },
+  //       }),
+  //     });
+  //     console.log(response);
+  //   }
+  //   for (let i = 0; i < stranky.length; i++) {
+  //     const response = await fetch('http://new.lesnimarianka.cz/api/stranky', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         data: {
+  //           Nazev: stranky[i].Nazev,
+  //           Text: stranky[i].Text,
+  //         },
+  //       }),
+  //     });
+  //     console.log(response);
+  //   }
+  // };
   return (
     <div>
       <div className='nav'>
@@ -154,7 +230,10 @@ function Nav() {
           role='presentation'
         >
           <Link to='/'>
-            <div className='logo'>
+            <div
+              className='logo'
+              // onClick={up}
+            >
               <div className='logoCont'>
                 <img src={mariLogo} alt='mariLogo' />
               </div>

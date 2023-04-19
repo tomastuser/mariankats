@@ -5,11 +5,11 @@ import Zaklad from '../../components/Zaklad';
 
 function NabidkaPrace() {
   return (
-    <Layout title='Nabídka práce'>
+    <Layout title='Nabídka spolupráce'>
       <div className='mainTextCont'>
         <div className='mainText'>
-          <Zaklad nazev='Nabídka práce' />
-          <ContentImport nazev='Nabídka práce' />
+          <Zaklad nazev='Nabídka spolupráce' />
+          <ContentImport nazev='Nabídka spolupráce' />
         </div>
       </div>
     </Layout>

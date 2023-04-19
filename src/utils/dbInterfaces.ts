@@ -2,6 +2,7 @@ interface AktualitaIF {
   Nazev: string;
   id: number;
   Image: { url: string } | null;
+  ImageUrl: string;
   Text: string;
 }
 interface ClenIF {
@@ -9,12 +10,14 @@ interface ClenIF {
   Pozice: string;
   Image: { url: string } | null;
   Popis: string;
+  ImageUrl: string;
   // Poradi: number;
   id: number;
 }
 interface StrankaIF {
   Nazev: string;
   Text: string;
+  id: number;
 }
 interface SponzorIF {
   Nazev: string;
@@ -22,6 +25,7 @@ interface SponzorIF {
   Image: { url: string } | null;
   Odkaz: string;
   Poradi: number;
+  ImageUrl: string;
   Okraj: number | null;
   id: number;
   Popis: string | null;

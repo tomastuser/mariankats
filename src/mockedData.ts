@@ -1108,6 +1108,47 @@ export const aktuality = [
     Datum: null,
     Image: null,
   },
+  {
+    id: 38,
+    Nazev: 'PF 2023',
+    Text:
+      '<p>Přejeme krásné svátky a do nového roku pevná přátelství, zdraví a hodně sil!</p>',
+    created_at: '2022-11-15T16:37:19.154Z',
+    updated_at: '2022-11-15T16:37:19.166Z',
+    Image: {
+      name: 'NÁHLED_pf23_upravene2_gj0xwb',
+      ext: '.jpg',
+      mime: 'image/jpeg',
+      url:
+        'https://res.cloudinary.com/marianka/image/upload/v1671793330/N%C3%81HLED_pf23_upravene2_gj0xwb.jpg',
+      previewUrl: null,
+      provider: 'cloudinary',
+      created_by: 1,
+      updated_by: 1,
+      created_at: '2022-11-15T16:37:12.570Z',
+      updated_at: '2022-11-15T16:37:12.603Z',
+    },
+  },
+  {
+    id: 39,
+    Nazev: 'Zvoneček jaro 2023',
+    Text:
+      '<p>Srdečně zveme na oblíbený kroužek Zvoneček pro děti od 1 do 3 let s doprovodem! Startujeme už 15. března.</p><p>Setkávat se budeme na naší zahradě ve:</p><p>STŘEDY od 9:30 do 11:30</p><p>Dvanáct dopolední můžete strávit v zahradě a blízkém lese, hrát si, tvořit, zpívat a radovat se společně se svými dětmi či vnoučaty z probouzení jarní přírody.</p><p>Podrobnosti a přihlášku najdete <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1Y6EweGSEb30fGYOwp6K-fcu-tM7559jFa6d7FYqS4d7gtg/viewform">zde</a>.</p><p>Těšíme se na vás i vaše děti!</p>',
+    created_at: '2022-11-15T16:37:19.154Z',
+    updated_at: '2022-11-15T16:37:19.166Z',
+    Image: null,
+  },
+  {
+    id: 40,
+    Nazev: 'Tábory 2023',
+    Text:
+      '<p>Také už se nemůžete dočkat léta a vaše děti prázdninových dobrodružství?&nbsp;</p><p>Srdečně zveme na naše příměstské tábory!</p><p>Podrobnosti najdete <a href="https://lesnikavyl.cz/tabory">zde</a>.</p>',
+    created_at: '2022-03-14T15:07:22.812Z',
+    updated_at: '2022-03-14T15:08:11.512Z',
+    Image: {
+      url: 'https://lesnikavyl.cz/images/tabory23.jpg',
+    },
+  },
 ];
 
 export const clenove = [
@@ -1797,7 +1838,7 @@ export const stranky = [
     id: 7,
     Nazev: 'Projekty 1',
     Text:
-      '<h3>Lesní mateřská škola Mariánka</h3><p><br>Zdroj podpory: Operační program Výzkum, vývoj a vzdělávání, MŠMT</p><p>Název příjemce podpory: Lesní mateřská škola Mariánka</p><p>Datum zahájení realizace: 1. 9. 2019</p><p>Datum plánovaného ukončení: 31. 8. 2021</p><p>Název specifického cíle: Zvýšení kvality předškolního vzdělávání včetně usnadnění přechodu dětí na ZŠ</p><p>Obsah projektu: Projekt je zaměřen na jedno z/kombinaci následujících témat: personální podpora, osobnostně profesní rozvoj pedagogů, společné vzdělávání dětí, podpora extrakurikulárních/rozvojových aktivit, aktivity rozvíjející ICT, spolupráce s rodiči dětí, spolupráce s veřejností.</p>',
+      '<h3>Lesní mateřská škola Mariánka</h3><p><br>Zdroj podpory: Operační program Výzkum, vývoj a vzdělávání, MŠMT</p><p>Název příjemce podpory: Lesní mateřská škola Mariánka</p><p>Datum zahájení realizace: 1. 9. 2019</p><p>Datum plánovaného ukončení: 31. 8. 2021</p><p>Název specifického cíle: Zvýšení kvality předškolního vzdělávání včetně usnadnění přechodu dětí na ZŠ</p><p>Obsah projektu: Projekt je zaměřen na jedno z/kombinaci následujících témat: personální podpora, osobnostně profesní rozvoj pedagogů, společné vzdělávání dětí, podpora extrakurikulárních/rozvojových aktivit, aktivity rozvíjející ICT, spolupráce s rodiči dětí, spolupráce s veřejností.</p><h3>Digitalizujeme školu</h3><div style="display: flex; justify-content: center"><img src="/images/digitalizujeme.png"></div><p>&nbsp;</p>',
     created_at: '2021-01-18T19:14:17.852Z',
     updated_at: '2021-10-01T11:19:13.470Z',
   },
@@ -1829,7 +1870,7 @@ export const stranky = [
     id: 11,
     Nazev: 'Kroužky',
     Text:
-      '<h3>Zvoneček</h3><p>Na jaře, na podzim a v zimě probíhá cyklus setkání určených pro děti do 3 let v doprovodu rodiče nebo jiné blízké osoby. Od malička děti poznávají přírodu hravou formou - písničky, básničky, tvoření, hry, procházky. Hrajeme si v naší kouzelné zahradě a v blízkém lese pod vedením lektora z lesní školky.</p><h3>Aktuální cyklus</h3><p>Přihlašovací formulář <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1Y6EweGSEb30fGYOwp6K-fcu-tM7559jFa6d7FYqS4d7gtg/viewform?usp=sf_link">zde</a>.<br>&nbsp;</p>',
+      '<h3>Zvoneček</h3><p>Na jaře, na podzim a v zimě probíhá cyklus setkání určených pro děti do 3 let v doprovodu rodiče nebo jiné blízké osoby. Od malička děti poznávají přírodu hravou formou - písničky, básničky, tvoření, hry, procházky. Hrajeme si v naší kouzelné zahradě a v blízkém lese pod vedením lektora z lesní školky.</p><h3>Aktuální cyklus</h3><p>Přihlašovací formulář <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1Y6EweGSEb30fGYOwp6K-fcu-tM7559jFa6d7FYqS4d7gtg/viewform?usp=sf_link">zde</a>.</p><p>Jarní cyklus startuje už 15. 3. a budeme se setkávat až do konce května. Chcete-li se na něco zeptat, pište na aktivity@lesnikavyl.cz Těšíme se na vás i vaše děti!</p>',
     created_at: '2021-01-18T19:16:09.692Z',
     updated_at: '2022-03-21T13:12:45.418Z',
   },
@@ -1964,7 +2005,7 @@ export const stranky = [
     id: 14,
     Nazev: 'Dokumenty',
     Text:
-      '<p><strong>Harmonogram školního roku LMŠ Mariánka</strong><br><strong>2022-23</strong><br>1/9 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;začátek školního roku<br>28/9 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;státní svátek – zavřeno<br>28/10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;státní svátek – zavřeno<br>17/11 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;státní svátek – zavřeno<br>23/12 – 1/1 &nbsp;vánoční prázdniny<br>7/4 – 10/4 &nbsp; &nbsp;Velikonoce – zavřeno<br>1/5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; státní svátek – zavřeno<br>8/5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; státní svátek – zavřeno<br>30/6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; konec školního roku&nbsp;<br>1/7 – 31/8 &nbsp; &nbsp;prázdniny</p><p><a href="/files/eticky_kodex_lms.pdf">Etický kodex</a><br><a href="/files/ochrana_osobnich_udaju_LMS_Marianka.pdf">Ochrana osobních údajů</a><br><a href="/files/kriteria_prijeti_2022.pdf">Podmínky pro podání žádosti o přijetí</a><br><a href="/files/pravidla_stiznosti_lms_marianka.pdf">Pravidla stížností</a><br><a href="/files/provozni_rad_lms_marianka_2019-09.pdf">Provozní řád</a><br><a href="/files/skolni_rad_lms_marianka_2019-04.pdf">Školní řád</a><br><a href="/files/svp_lms_marianka_2017_revize.pdf">Školní vzdělávací program</a></p><h2>Výroční zprávy</h2><ul><li><a href="/files/marianka_vz2017.pdf">Výroční zpráva o činnosti 2017/18</a></li><li><a href="/files/vz_hosp_2018.pdf">Výroční zpráva o hospodaření 2018</a></li><li><a href="/files/MARIANKA_VZ2019_preview.pdf">Výroční zpráva o činnosti 2018/19</a></li><li><a href="/files/vz_hosp_2019.pdf">Výroční zpráva o hospodaření 2019</a></li><li><a href="/files/MARIANKA_VZ2020_web.pdf">Výroční zpráva o činnosti 2019/20</a></li><li><a href="/files/vz_hosp_2020.pdf">Výroční zpráva o &nbsp;hospodaření 2020</a></li><li><a href="/files/MARIANKA_VZ2021.pdf">Výroční zpráva o činnosti 2020/21</a></li></ul><h3>Zápis</h3><ul><li><a href="/files/zadost_o_prijeti.pdf">Žádost o přijetí</a></li><li><a href="/files/evidencni_list.pdf">Evidenční list</a></li><li><a href="/files/dotaznik.pdf">Dotazník</a></li><li><a href="/files/oznameni-iv.pdf">Oznámení o individuálním vzdělávání</a></li></ul>',
+      '<p><strong>Harmonogram školního roku LMŠ Mariánka</strong><br><strong>2022-23</strong><br>1/9 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;začátek školního roku<br>28/9 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;státní svátek – zavřeno<br>28/10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;státní svátek – zavřeno<br>17/11 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;státní svátek – zavřeno<br>23/12 – 1/1 &nbsp;vánoční prázdniny<br>7/4 – 10/4 &nbsp; &nbsp;Velikonoce – zavřeno<br>1/5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; státní svátek – zavřeno<br>8/5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; státní svátek – zavřeno<br>30/6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; konec školního roku&nbsp;<br>1/7 – 31/8 &nbsp; &nbsp;prázdniny</p><p><a href="/files/eticky_kodex_lms.pdf">Etický kodex</a><br><a href="/files/ochrana_osobnich_udaju_LMS_Marianka.pdf">Ochrana osobních údajů</a><br><a href="/files/kriteria_prijeti_2022.pdf">Podmínky pro podání žádosti o přijetí</a><br><a href="/files/pravidla_stiznosti_lms_marianka.pdf">Pravidla stížností</a><br><a href="/files/provozni_rad_lms_marianka_2019-09.pdf">Provozní řád</a><br><a href="/files/skolni_rad_lms_marianka_2019-04.pdf">Školní řád</a><br><a href="/files/svp_lms_marianka_2017_revize.pdf">Školní vzdělávací program</a></p><h2>Výroční zprávy</h2><ul><li><a href="/files/marianka_vz2017.pdf">Výroční zpráva o činnosti 2017/18</a></li><li><a href="/files/vz_hosp_2018.pdf">Výroční zpráva o hospodaření 2018</a></li><li><a href="/files/MARIANKA_VZ2019_preview.pdf">Výroční zpráva o činnosti 2018/19</a></li><li><a href="/files/vz_hosp_2019.pdf">Výroční zpráva o hospodaření 2019</a></li><li><a href="/files/MARIANKA_VZ2020_web.pdf">Výroční zpráva o činnosti 2019/20</a></li><li><a href="/files/vz_hosp_2020.pdf">Výroční zpráva o &nbsp;hospodaření 2020</a></li><li><a href="/files/MARIANKA_VZ2021.pdf">Výroční zpráva o činnosti 2020/21</a></li><li><a href="/files/vz_hosp_2021.pdf">Výroční zpráva o hospodaření 2020/21</a></li></ul><h3>Zápis</h3><ul><li><a href="/files/zadost_o_prijeti.pdf">Žádost o přijetí</a></li><li><a href="/files/evidencni_list.pdf">Evidenční list</a></li><li><a href="/files/dotaznik.pdf">Dotazník</a></li><li><a href="/files/oznameni-iv.pdf">Oznámení o individuálním vzdělávání</a></li></ul>',
     created_at: '2021-01-18T19:22:26.126Z',
     updated_at: '2022-10-31T14:20:57.648Z',
   },
@@ -1980,7 +2021,7 @@ export const stranky = [
     id: 12,
     Nazev: 'Tábory',
     Text:
-      '<p>Letní příměstské tábory spolku Kavyl jsou určeny zejména pro děti ve věku 3-7 let, které ještě nechodí do školy. Máte-li děti různého věku, můžete je ve vybraných termínech přihlásit společně, protože otevíráme dvě paralelní skupiny s vlastním programem pro děti předškolní a školáky z 1. stupně ZŠ. Tábory se konají v Líšni v zázemí Mariánky a v okolních lesích, druhým zázemím je <a href="https://www.stromik.cz/kontakt">lesní školka Stromík</a> v Pozořicích. Provozní doba tábora je vždy od pondělí do pátku od 8 do 16 h.</p><h3>Aktuální informace</h3><p>V letošním roce si můžete vybírat z následujících táborů:</p><p><i>Mariánka</i></p><p><i>11. – 15. 7. (3–7 let) - Indiáni ze Samot</i></p><p><i>15. – 19. 8. (3–7 let) - Čarování s přírodou</i></p><p><i>Stromík</i></p><p><i>18. – 22. 7. (3–7 let a 7–10 let) - Dobrodružství s Bobem a Bobkem</i></p><p><i>25. – 29. 7. (3–7 let) - Lesní strašidýlka</i></p><p><i>1.– 5. 8. (5–9 let) - Hurá do lesa!</i></p><p><i>8. – 12. 8. (3–7 let) - V říši divů</i></p><p>Cena tábora je 2 200 Kč. V ceně není zahrnut oběd (60–75 Kč dle dodavatele).</p><p>Podrobné informace k organizaci najdete v online PŘIHLÁŠCE, k tématům pak <a href="https://drive.google.com/file/d/1npm9cp3x9xRspFhMAxT4u1za-dCm1_ts/view?usp=sharing">zde</a>.</p><p>Těšíme se na vaše děti!</p>',
+      '<p>Letní příměstské tábory spolku Kavyl jsou pro děti ve věku 3,5–7 let, které ještě nechodí do školy. Vybrané tábory jsou i pro školní děti (u termínu je uvedený věk). Jsou-li u jednoho termínu a místa uvedeny dva tábory, znamená to, že organizujeme dvě skupiny (předškolní a školní) se samostatným programem, tak abyste mohli přihlásit najednou sourozence různého věku.</p><p>Tábory se konají v Líšni v zázemí Mariánky a v okolních lesích, druhým zázemím je <a href="https://www.stromik.cz/kontakt">lesní školka Stromík</a> v Pozořicích. Provozní doba tábora je vždy od pondělí do pátku od 8 do 16 h.</p><h3>Tábory 2023</h3><p><i>Příměstské tábory se budou konat v následujících termínech. <br/><br/> Brno-Líšeň (Mariánka)<br/> 10. - 14. 7. (3,5 – 7 let) Kouzelný les a jeho obyvatelé<br/> 17. - 21. 7. (5 – 8 let) Bylo, nebylo a co bude dál? <br/> 21. - 25. 8. (3,5 – 7 let) Dobrodružství v Čarolese<br/><br/>Pozořice (Stromík) <br/>10. - 14. 7. (1. – 3. třída) Hmyzí detektivové<br/>24. - 28. 7. (3,5 – 7 let a 7–10 let) Indiánskou stezkou<br/> 7. - 11. 8. (5 – 10 let) Mauglího dobrodružství - obsazeno<br/>14. - 18. 8. (3,5 – 7 let) Byla jednou jedna nota<br/> 21. - 25. 8. (3,5 – 7 let) Kouzelný les<br/><br/>Cena tábora je 2 500 Kč.<br/><br/>Přihlašovat můžete děti prostřednictvím <a href="https://forms.gle/raR2sCa3uFJmLZJR6">ONLINE PŘIHLÁŠKY</a>.<br/><br/>Zajímají-li vás podrobněji jednotlivá témata táborů, podívejte se na <a href="https://www.lesnikavyl.cz/files/tabory_anotace_2023.png">anotace</a>.<br/><br/>Těšíme se v létě na viděnou!</i>',
     created_at: '2021-01-18T19:16:22.269Z',
     updated_at: '2022-09-16T08:27:15.959Z',
   },

@@ -24,11 +24,11 @@ const Aktualita = ({ match, history }: RouteComponentProps<{ id: string }>) => {
               <div className='aktualitaTelo'>
                 <div className='aktualitaImg'>
                   <div className='aktualitaImgCont'>
-                    {aktualita.Image && (
+                    {(aktualita.Image || aktualita.ImageUrl) && (
                       <Link to={`/aktualita/${aktualita.id}/foto`}>
                         <div>
                           <img
-                            src={aktualita.Image.url}
+                            src={aktualita.Image?.url || aktualita.ImageUrl}
                             alt={aktualita.Nazev}
                           />
                         </div>
