@@ -4,18 +4,18 @@ import FotoCont from '../../components/FotoCont';
 import Layout from '../../components/Layout';
 import Zaklad from '../../components/Zaklad';
 
-const Prednasky = () => {
+const DalsiAkce = () => {
   return (
-    <Layout title='Přednášky'>
+    <Layout title='Další akce'>
       <div className='mainTextCont'>
         <div className='mainText'>
-          <Zaklad nazev='Přednášky' />
-          <ContentImport nazev='Přednášky' />
-          <FotoCont name='prednasky.jpg' alt='Prednasky' />
+          <Zaklad nazev='Další akce' />
+          <ContentImport nazev='Další akce' />
+          <FotoCont name='prednasky.jpg' alt='Další akce' />
         </div>
       </div>
     </Layout>
   );
 };
 
-export default Prednasky;
+export default DalsiAkce;

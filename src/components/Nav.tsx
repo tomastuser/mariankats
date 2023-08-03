@@ -105,8 +105,12 @@ function Nav() {
           path: '/kavyl/tabory',
         },
         {
-          name: 'Přednášky',
-          path: '/kavyl/prednasky',
+          name: 'Ekocentrum Jezerka',
+          path: '/kavyl/ekocentrum',
+        },
+        {
+          name: 'Další akce',
+          path: '/kavyl/dalsiakce',
         },
       ],
     },

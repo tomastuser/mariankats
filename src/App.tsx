@@ -30,7 +30,8 @@ import AktualityVse from './pages/Aktuality/AktualityVse';
 import DalsiAktivity from './pages/DalsiAktivity/DalsiAktivity';
 import Krouzky from './pages/DalsiAktivity/Krouzky';
 import Tabory from './pages/DalsiAktivity/Tabory';
-import Prednasky from './pages/DalsiAktivity/Prednasky';
+import Ekocentrum from './pages/DalsiAktivity/Ekocentrum';
+import DalsiAkce from './pages/DalsiAktivity/DalsiAkce';
 
 import Kontakt from './pages/Kontakt';
 
@@ -102,7 +103,8 @@ const App = () => {
             <Route exact path='/kavyl' component={DalsiAktivity} />
             <Route exact path='/kavyl/krouzky' component={Krouzky} />
             <Route exact path='/kavyl/tabory' component={Tabory} />
-            <Route exact path='/kavyl/prednasky' component={Prednasky} />
+            <Route exact path='/kavyl/ekocentrum' component={Ekocentrum} />
+            <Route exact path='/kavyl/dalsiakce' component={DalsiAkce} />
 
             <Route exact path='/kontakt' component={Kontakt} />
 
