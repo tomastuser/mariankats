@@ -1,7 +1,7 @@
 interface AktualitaIF {
   Nazev: string;
   id: number;
-  Image: { url: string } | null;
+  Image: { data: { attributes: { url: string } } } | null;
   ImageUrl: string;
   Text: string;
 }
@@ -22,7 +22,7 @@ interface StrankaIF {
 interface SponzorIF {
   Nazev: string;
   Vyska: string | null;
-  Image: { url: string } | null;
+  Image: { data: { attributes: { url: string } } } | null;
   Odkaz: string;
   Poradi: number;
   ImageUrl: string;

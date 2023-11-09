@@ -16,9 +16,13 @@ const Foto = ({ match, history }: RouteComponentProps<{ id: string }>) => {
         {aktualita ? (
           <div className='fotoContainer'>
             <div className='foto'>
-              {aktualita.Image ? (
+              {aktualita.Image?.data || aktualita.ImageUrl ? (
                 <img
-                  src={aktualita.Image.url}
+                  src={
+                    aktualita.Image?.data
+                      ? aktualita.Image.data.attributes.url
+                      : aktualita.ImageUrl
+                  }
                   alt={aktualita.Nazev}
                   onClick={history.goBack}
                   onKeyDown={history.goBack}

@@ -23,14 +23,16 @@ const Sponzori = () => {
               sponzoriSorted().map((sponzor: SponzorIF) => (
                 <div key={sponzor.id}>
                   <a href={sponzor.Odkaz}>
-                    {(sponzor.Image || sponzor.ImageUrl) && (
+                    {(sponzor.Image?.data || sponzor.ImageUrl) && (
                       <img
                         style={{
                           height: sponzor.Vyska ? sponzor.Vyska : '5vw',
                           padding: sponzor.Okraj ? `${sponzor.Okraj}vh` : '0',
                         }}
                         alt=''
-                        src={sponzor.Image?.url || sponzor.ImageUrl}
+                        src={
+                          sponzor.Image?.data.attributes.url || sponzor.ImageUrl
+                        }
                       ></img>
                     )}
                     {sponzor.Popis && <h4>{sponzor.Popis}</h4>}
