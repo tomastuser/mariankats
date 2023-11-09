@@ -11,7 +11,7 @@ interface ClenIF {
   Image: { data: { attributes: { url: string } } } | null;
   Popis: string;
   ImageUrl: string;
-  // Poradi: number;
+  Poradi: number;
   id: number;
 }
 interface StrankaIF {
