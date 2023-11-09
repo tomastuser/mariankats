@@ -70,7 +70,7 @@ function OdrazkyUvod() {
             size='1x'
             fixedWidth
           />
-          {'  '} kapacita 15 dětí{' '}
+          {'  '} kapacita 16 dětí{' '}
           <FontAwesomeIcon
             className='ikonaD'
             icon={faCampground}
