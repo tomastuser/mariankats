@@ -1,9 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
-import './slick-theme.css';
-import './slick.css';
 
 import Uvod from './pages/Uvod';
 import Admin from './pages/Admin';
@@ -68,50 +66,42 @@ const App = () => {
       <ScrollToTop />
       <div className='App'>
         <dbContext.Provider value={{ aktuality, clenove, stranky, sponzori }}>
-          <Switch>
-            <Route path='/' exact component={Uvod} />
-            <Route path='/onas' exact component={OMariance} />
-            <Route path='/onas/omariance' exact component={OMariance} />
-            <Route path='/onas/zazemi' exact component={Zazemi} />
-            <Route path='/onas/nastym' exact component={NasiLide} />
-            <Route path='/onas/program' exact component={Program} />
-            <Route path='/onas/projekty' exact component={Projekty} />
-            <Route path='/onas/sponzori' exact component={Sponzori} />
-            <Route path='/onas/dokumenty' exact component={Dokumenty} />
-            <Route
-              path='/onas/nabidkaspoluprace'
-              exact
-              component={NabidkaPrace}
-            />
+          <Routes>
+            <Route path='/' element={<Uvod />} />
+            <Route path='/onas' element={<OMariance />} />
+            <Route path='/onas/omariance' element={<OMariance />} />
+            <Route path='/onas/zazemi' element={<Zazemi />} />
+            <Route path='/onas/nastym' element={<NasiLide />} />
+            <Route path='/onas/program' element={<Program />} />
+            <Route path='/onas/projekty' element={<Projekty />} />
+            <Route path='/onas/sponzori' element={<Sponzori />} />
+            <Route path='/onas/dokumenty' element={<Dokumenty />} />
+            <Route path='/onas/nabidkaspoluprace' element={<NabidkaPrace />} />
 
-            <Route exact path='/info' component={Zapis} />
-            <Route exact path='/info/zapis' component={Zapis} />
-            <Route exact path='/info/cenik' component={Cenik} />
-            <Route exact path='/info/cossebou' component={CoSSebou} />
-            <Route exact path='/info/nasepravidla' component={NasePravidla} />
-            <Route exact path='/info/jaksezije' component={JakSeZije} />
-            <Route exact path='/info/tipyprorodice' component={TipyProRodice} />
+            <Route path='/info' element={<Zapis />} />
+            <Route path='/info/zapis' element={<Zapis />} />
+            <Route path='/info/cenik' element={<Cenik />} />
+            <Route path='/info/cossebou' element={<CoSSebou />} />
+            <Route path='/info/nasepravidla' element={<NasePravidla />} />
+            <Route path='/info/jaksezije' element={<JakSeZije />} />
+            <Route path='/info/tipyprorodice' element={<TipyProRodice />} />
 
-            <Route path='/aktuality' exact component={AktualityVse} />
-            <Route exact path='/aktualita/:id' component={Aktualita} />
-            <Route
-              exact
-              path='/aktuality/strana/:id'
-              component={AktualityVse}
-            />
+            <Route path='/aktuality' element={<AktualityVse />} />
+            <Route path='/aktualita/:id' element={<Aktualita />} />
+            <Route path='/aktuality/strana/:id' element={<AktualityVse />} />
 
-            <Route exact path='/kavyl' component={DalsiAktivity} />
-            <Route exact path='/kavyl/krouzky' component={Krouzky} />
-            <Route exact path='/kavyl/tabory' component={Tabory} />
-            <Route exact path='/kavyl/ekocentrum' component={Ekocentrum} />
-            <Route exact path='/kavyl/dalsiakce' component={DalsiAkce} />
+            <Route path='/kavyl' element={<DalsiAktivity />} />
+            <Route path='/kavyl/krouzky' element={<Krouzky />} />
+            <Route path='/kavyl/tabory' element={<Tabory />} />
+            <Route path='/kavyl/ekocentrum' element={<Ekocentrum />} />
+            <Route path='/kavyl/dalsiakce' element={<DalsiAkce />} />
 
-            <Route exact path='/kontakt' component={Kontakt} />
+            <Route path='/kontakt' element={<Kontakt />} />
 
-            <Route exact path='/aktualita/:id/foto' component={Foto} />
-            <Route exact path='/admin' component={Admin} />
-            <Route path='*' exact component={PageNotFound} />
-          </Switch>
+            <Route path='/aktualita/:id/foto' element={<Foto />} />
+            <Route path='/admin' element={<Admin />} />
+            <Route path='*' element={<PageNotFound />} />
+          </Routes>
         </dbContext.Provider>
       </div>
     </Router>

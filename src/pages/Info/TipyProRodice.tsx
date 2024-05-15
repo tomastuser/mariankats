@@ -1,6 +1,5 @@
 import React from 'react';
 import ContentImport from '../../components/ContentImport';
-import FotoCont from '../../components/FotoCont';
 import Layout from '../../components/Layout';
 import Zaklad from '../../components/Zaklad';
 

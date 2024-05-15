@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import { RouteComponentProps } from 'react-router-dom';
 
 import Pagination from '../../components/Pagination';
 import AktualitaZastupce from '../../components/AktualitaZastupce';
@@ -7,11 +6,14 @@ import Layout from '../../components/Layout';
 import { dbContext } from '../../utils/dbContext';
 import { AktualitaIF } from '../../utils/dbInterfaces';
 import Loading from '../../components/Loading';
+import { useParams } from 'react-router-dom';
 
-const Aktuality = ({ match }: RouteComponentProps<{ id: string }>) => {
+const Aktuality = () => {
   const { aktuality } = useContext(dbContext);
+  const params = useParams();
+
   const [currentPage, setCurrentPage] = useState(
-    match.params.id ? Number(match.params.id) : 1
+    params.id ? Number(params.id) : 1
   );
   const postsPerPage: number = 6;
 

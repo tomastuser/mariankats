@@ -1,6 +1,5 @@
 import React from 'react';
 import ContentImport from '../../components/ContentImport';
-import FotoCont from '../../components/FotoCont';
 import Layout from '../../components/Layout';
 import Andel from '../../components/Uvod/Andel';
 import Zaklad from '../../components/Zaklad';

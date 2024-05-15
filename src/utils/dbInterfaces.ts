@@ -1,11 +1,11 @@
-interface AktualitaIF {
+export interface AktualitaIF {
   Nazev: string;
   id: number;
   Image: { data: { attributes: { url: string } } } | null;
   ImageUrl: string;
   Text: string;
 }
-interface ClenIF {
+export interface ClenIF {
   Jmeno: string;
   Pozice: string;
   Image: { data: { attributes: { url: string } } } | null;
@@ -14,12 +14,12 @@ interface ClenIF {
   Poradi: number;
   id: number;
 }
-interface StrankaIF {
+export interface StrankaIF {
   Nazev: string;
   Text: string;
   id: number;
 }
-interface SponzorIF {
+export interface SponzorIF {
   Nazev: string;
   Vyska: string | null;
   Image: { data: { attributes: { url: string } } } | null;
@@ -30,5 +30,3 @@ interface SponzorIF {
   id: number;
   Popis: string | null;
 }
-
-export { AktualitaIF, ClenIF, StrankaIF, SponzorIF };

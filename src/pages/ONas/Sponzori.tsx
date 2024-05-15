@@ -31,7 +31,8 @@ const Sponzori = () => {
                         }}
                         alt=''
                         src={
-                          sponzor.Image?.data.attributes.url || sponzor.ImageUrl
+                          sponzor.Image?.data?.attributes.url ||
+                          sponzor.ImageUrl
                         }
                       ></img>
                     )}

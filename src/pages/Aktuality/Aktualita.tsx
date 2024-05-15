@@ -1,14 +1,17 @@
 import React, { useContext } from 'react';
-import { Link, RouteComponentProps } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import Layout from '../../components/Layout';
 import Loading from '../../components/Loading';
 import { dbContext } from '../../utils/dbContext';
 import { AktualitaIF } from '../../utils/dbInterfaces';
 
-const Aktualita = ({ match, history }: RouteComponentProps<{ id: string }>) => {
+const Aktualita = () => {
   const { aktuality } = useContext(dbContext);
+  const navigate = useNavigate();
+  const params = useParams();
+
   let aktualita: AktualitaIF | undefined = aktuality?.find((akt) => {
-    return String(akt.id) === match.params.id;
+    return String(akt.id) === params.id;
   });
   return (
     <Layout title={aktualita ? aktualita.Nazev : 'loading'}>
@@ -49,8 +52,8 @@ const Aktualita = ({ match, history }: RouteComponentProps<{ id: string }>) => {
               </div>
               <button
                 className='aktualitaButton button'
-                onClick={history.goBack}
-                onKeyDown={history.goBack}
+                onClick={() => navigate(-1)}
+                onKeyDown={() => navigate(-1)}
               >
                 Zpět
               </button>

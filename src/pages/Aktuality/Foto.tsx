@@ -1,14 +1,18 @@
 import React, { useContext } from 'react';
-import { RouteComponentProps } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+
 import Layout from '../../components/Layout';
 import Loading from '../../components/Loading';
 import { dbContext } from '../../utils/dbContext';
 import { AktualitaIF } from '../../utils/dbInterfaces';
 
-const Foto = ({ match, history }: RouteComponentProps<{ id: string }>) => {
+const Foto = () => {
   const { aktuality } = useContext(dbContext);
+  const navigate = useNavigate();
+  const params = useParams();
+
   let aktualita: AktualitaIF | undefined = aktuality?.find((akt) => {
-    return String(akt.id) === match.params.id;
+    return String(akt.id) === params.id;
   });
   return (
     <Layout title={`Foto č. ${aktualita && aktualita.id}`}>
@@ -24,8 +28,8 @@ const Foto = ({ match, history }: RouteComponentProps<{ id: string }>) => {
                       : aktualita.ImageUrl
                   }
                   alt={aktualita.Nazev}
-                  onClick={history.goBack}
-                  onKeyDown={history.goBack}
+                  onClick={() => navigate(-1)}
+                  onKeyDown={() => navigate(-1)}
                   role='presentation'
                 />
               ) : (
@@ -38,8 +42,8 @@ const Foto = ({ match, history }: RouteComponentProps<{ id: string }>) => {
                   marginRight: 'auto',
                   marginLeft: 'auto',
                 }}
-                onClick={history.goBack}
-                onKeyDown={history.goBack}
+                onClick={() => navigate(-1)}
+                onKeyDown={() => navigate(-1)}
                 role='button'
                 tabIndex={0}
               >

@@ -270,8 +270,9 @@ function Nav() {
                     </a>
                   ) : (
                     <NavLink
-                      activeClassName='navLinkActive'
-                      className='navLink'
+                      className={({ isActive }) =>
+                        isActive ? 'navLink navLinkActive' : 'navLink'
+                      }
                       to={link.path}
                       id={link.id}
                     >
@@ -280,8 +281,9 @@ function Nav() {
                   )
                 ) : (
                   <NavLink
-                    activeClassName='navLinkActive'
-                    className='navLink'
+                    className={({ isActive }) =>
+                      isActive ? 'navLink navLinkActive' : 'navLink'
+                    }
                     to={link.path}
                     id={link.id}
                   >
@@ -303,8 +305,9 @@ function Nav() {
                           }
                         >
                           <NavLink
-                            className='navLink'
-                            activeClassName='navLinkActive'
+                            className={({ isActive }) =>
+                              isActive ? 'navLink navLinkActive' : 'navLink'
+                            }
                             to={{ pathname: subLink.path }}
                           >
                             <p>{subLink.name}</p>
@@ -323,8 +326,9 @@ function Nav() {
                         }
                       >
                         <NavLink
-                          className='navLink'
-                          activeClassName='navLinkActive'
+                          className={({ isActive }) =>
+                            isActive ? 'navLink navLinkActive' : 'navLink'
+                          }
                           to={{ pathname: subLink.path }}
                         >
                           <p>{subLink.name}</p>
