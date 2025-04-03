@@ -1,24 +1,31 @@
 import React, { useContext } from 'react';
 import { dbContext } from '../utils/dbContext';
-import Loading from './Loading';
+import { parseImagesFromHTML } from '../utils/parseImagesFromHTML';
+import FotoCont from './FotoCont';
 
 const ContentImportSmall = ({ nazev }: { nazev: string }) => {
   const { stranky } = useContext(dbContext);
+  const foundStranka = stranky?.find((stranka) => stranka.Nazev === nazev);
+  const imageRegexp = /\*\*\*img\*\*\*=(.+?\.(?:jpg|jpeg))/;
+  const foundImgStringMatch = foundStranka?.Text.match(imageRegexp);
+
   return (
     <>
-      {stranky && stranky.length > 0 ? (
-        stranky.map((stranka) =>
-          stranka.Nazev === nazev ? (
-            <div
-              dangerouslySetInnerHTML={{ __html: stranka.Text }}
-              key={stranka.Nazev}
-            />
-          ) : null
-        )
-      ) : (
-        <div className='mainOstatni'>
-          <Loading />
-        </div>
+      {foundStranka && (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: parseImagesFromHTML(
+              foundStranka.Text.replace(imageRegexp, '')
+            ),
+          }}
+          key={foundStranka.Nazev}
+        />
+      )}
+      {foundImgStringMatch && (
+        <FotoCont
+          name={foundImgStringMatch[1]}
+          alt={foundStranka?.Nazev || ''}
+        />
       )}
     </>
   );

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { dbContext } from '../utils/dbContext';
 import Loading from './Loading';
+import { parseImagesFromHTML } from '../utils/parseImagesFromHTML';
 
 const ContentImport = ({ nazev }: { nazev: string }) => {
   const { stranky } = useContext(dbContext);
@@ -11,7 +12,9 @@ const ContentImport = ({ nazev }: { nazev: string }) => {
           stranka.Nazev === nazev ? (
             <div
               key={stranka.Nazev}
-              dangerouslySetInnerHTML={{ __html: stranka.Text }}
+              dangerouslySetInnerHTML={{
+                __html: parseImagesFromHTML(stranka.Text),
+              }}
             />
           ) : null
         )

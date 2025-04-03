@@ -16,7 +16,9 @@
 
 @font-face {
   font-family: 'Marianka';
-  src: local('Marianka'), url(./public/Marianka-Regular.ttf) format('truetype');
+  src:
+    local('Marianka'),
+    url(./public/Marianka-Regular.ttf) format('truetype');
 }
 
 body {
@@ -35,6 +37,10 @@ a:focus,
 div:focus {
   outline: none;
   opacity: 55%;
+}
+
+dialog:focus {
+  outline: none;
 }
 
 main {
@@ -157,6 +163,11 @@ button {
   font-weight: normal;
   margin-top: 2vh;
 }
+.button:focus {
+  background-color: var(--buttonHover);
+  color: var(--text);
+  outline: none;
+}
 .button:hover {
   background-color: var(--buttonHover);
   color: var(--text);
@@ -278,6 +289,37 @@ tr:nth-child(even) {
   color: var(--text);
 }
 
+dialog h2 {
+  font-family: Marianka, 'Roboto Condensed', sans-serif;
+  margin-bottom: 48px;
+  text-align: center;
+}
+dialog p {
+  margin: 0px;
+  margin-bottom: 24px;
+}
+dialog {
+  color: var(--text);
+  border-image: url('./public/caraNav12R.png') 40.3 repeat;
+  border-image-width: 21px;
+  border-image-outset: 3px;
+  background-repeat: no-repeat;
+  background-image: url(./public/LH_ramecek_foto.png),
+    url(./public/LD_ramecek_foto.png), url(./public/PH_ramecek_foto.png),
+    url(./public/PD_ramecek_foto.png);
+  background-position:
+    left top,
+    left bottom,
+    right top,
+    right bottom;
+  background-size: 25px;
+  background-color: var(--back);
+  padding: 48px 60px;
+  max-width: 800px;
+  text-align: left;
+  margin: auto;
+}
+
 .logoCont {
   height: 8vh;
   margin-right: 1vw;
@@ -372,7 +414,11 @@ tr:nth-child(even) {
   background-image: url(./public/LH_ramecek_foto.png),
     url(./public/LD_ramecek_foto.png), url(./public/PH_ramecek_foto.png),
     url(./public/PD_ramecek_foto.png);
-  background-position: left top, left bottom, right top, right bottom;
+  background-position:
+    left top,
+    left bottom,
+    right top,
+    right bottom;
   background-size: 25px;
 }
 .fotoCont img {
@@ -494,7 +540,11 @@ tr:nth-child(even) {
   background-image: url(./public/LH_ramecek_foto.png),
     url(./public/LD_ramecek_foto.png), url(./public/PH_ramecek_foto.png),
     url(./public/PD_ramecek_foto.png);
-  background-position: left top, left bottom, right top, right bottom;
+  background-position:
+    left top,
+    left bottom,
+    right top,
+    right bottom;
   background-size: 25px;
   background-color: #8eada5;
   padding: 1.2vw 2.3vw 1vw 2.3vw;
@@ -593,7 +643,11 @@ tr:nth-child(even) {
   background-repeat: no-repeat;
   background-image: url(./public/LH_B.png), url(./public/LD_B.png),
     url(./public/PH_B.png), url(./public/PD_B.png);
-  background-position: left top, left bottom, right top, right bottom;
+  background-position:
+    left top,
+    left bottom,
+    right top,
+    right bottom;
   background-size: 25px;
 
   grid-column: 2/3;
@@ -2044,5 +2098,11 @@ tr:nth-child(even) {
   .kontaktB {
     padding-left: 10vw;
     padding-right: 10vw;
+  }
+  dialog {
+    max-width: 90vw;
+  }
+  .aktualitaButton {
+    max-width: 60vw;
   }
 }

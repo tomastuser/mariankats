@@ -1,7 +1,7 @@
 {
   "name": "mariankats",
   "version": "1.0.0",
-  "description": "webapp for LMŠ Mariánka using Typescript",
+  "description": "webapp for LMŠ Mariánka",
   "type": "module",
   "scripts": {
     "start": "vite --open",

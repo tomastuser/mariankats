@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import { dbContext } from '../utils/dbContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faBusAlt } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import {
+  faPaperPlane,
+  faHome,
+  faPhone,
+  faBusAlt,
+} from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import givt from '../public/givt.png';
 import alms from '../public/alms.png';
 import girlanda from '../public/girlmari.png';
@@ -25,6 +27,7 @@ const Footer = () => {
     <FontAwesomeIcon icon={faBusAlt} size='1x' fixedWidth />,
     <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth />,
     <FontAwesomeIcon icon={faFacebookF} size='1x' fixedWidth />,
+    <FontAwesomeIcon icon={faInstagram} size='1x' fixedWidth />,
   ];
   return (
     <div className='Footer'>
